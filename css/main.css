@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1100px;
+  margin: auto;
+}
+
+/*common css end*/
+/*==== header seaction start ==== */
+header {
+  background-color: #4169E1;
+}
+header .container .header-container-wrapper .header {
+  width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px;
+}
+header .container .header-container-wrapper .header .logo-area a {
+  color: #fff;
+  font-size: 50px;
+  font-family: sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+header .container .header-container-wrapper .header nav ul li {
+  display: inline-block;
+}
+header .container .header-container-wrapper .header nav ul li a {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  padding: 10px 30px;
+  display: block;
+  text-transform: capitalize;
+  color: #fff;
+}
+header .container .header-container-wrapper .header nav ul li a:hover {
+  transition: 0.4s all ease;
+  color: #FF4500;
+}
+header .container .header-container-wrapper .header nav ul .active a {
+  color: #FF4500;
+}
+header .container .header-container-wrapper .header .btn-area .btn a {
+  padding: 10px 30px;
+  background-color: #FF4500;
+  text-decoration: none;
+  border-radius: 10px;
+  color: #fff;
+  font-family: "Ubuntu";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 45px;
+  transition: 0.4s;
+}
+header .container .header-container-wrapper .header .btn-area .btn a:hover {
+  color: black;
+}
+
+/*===== header seaction end ====*/
+/*===== banner seaction start ====*/
+#banner {
+  background-color: #4169E1;
+}
+#banner .total-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#banner .total-banner .left-area {
+  width: 40%;
+}
+#banner .total-banner .left-area h1 {
+  font-family: "Ubuntu";
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 50px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+#banner .total-banner .left-area h1 span {
+  color: #FF4500;
+}
+#banner .total-banner .left-area h3 {
+  font-family: "Ubuntu";
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+#banner .total-banner .left-area p {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0px;
+  line-height: 24px;
+  text-align: justify;
+  color: #C0C0C0;
+}
+#banner .total-banner .right-area {
+  width: 60%;
+}
+#banner .total-banner .right-area img {
+  width: 432px;
+  height: 310px;
+  margin-left: 132px;
+  background-color: #fff;
+}
+
+/*===== banner seaction end ====*/
+/*===== achivement part start ====*/
+#achivement {
+  background-color: #4169E1;
+  padding: 100px 0;
+}
+#achivement h2 {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Ubuntu";
+  text-align: center;
+  color: #fff;
+}
+#achivement h5 {
+  font-size: 16px;
+  color: #C0C0C0;
+  text-align: center;
+  position: relative;
+  margin-bottom: 40px;
+}
+#achivement h5::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 42%;
+  height: 3px;
+  width: 45px;
+  background-color: #FF4500;
+}
+#achivement h5::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  height: 3px;
+  width: 45px;
+  background-color: #FF4500;
+}
+#achivement .div {
+  display: flex;
+  justify-content: space-between;
+}
+#achivement .achivement_item {
+  border: 2px solid grey;
+  width: 174px;
+  height: 286px;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.08);
+}
+/*===== achivement part end ====*//*# sourceMappingURL=main.css.map */

@@ -1,0 +1,202 @@
+$primary-color: #4169E1;
+$btn-color: #FF4500;
+$paragraph-color:#C0C0C0;
+$secondary-color: #fff;
+$third-color: black;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1100px;
+    margin: auto;
+}
+/*common css end*/
+
+/*==== header seaction start ==== */
+header{
+    background-color: $primary-color;
+    .container{
+        .header-container-wrapper{
+            // background-color: $primary-color;
+            .header{
+                width: 1100px;
+                margin: auto;
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+                padding: 20px;
+                .logo-area{
+                    a{
+                        color: $secondary-color;
+                        font-size: 50px;
+                        font-family: sans-serif;
+                        font-weight: 700;
+                        text-decoration: none;
+                    }
+                }
+                nav{
+                    ul{
+                        li{
+                            display: inline-block;
+                            a{
+                                font-family: sans-serif;
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 18px;
+                                text-decoration: none;
+                                padding: 10px 30px;
+                                display: block;
+                                text-transform: capitalize;
+                                color: $secondary-color;
+                                
+                                &:hover{
+                                    transition: .4s all ease;
+                                    color: #FF4500;
+                                }
+                            }
+                        }
+                        .active{
+                            a{
+                                color: $btn-color;
+                            }
+                        }
+                    }
+                }
+                .btn-area{
+                    .btn{
+                       a{
+                        padding: 10px 30px;
+                        background-color: $btn-color;
+                        text-decoration: none;
+                        border-radius: 10px;
+                        color: $secondary-color;
+                        font-family: 'Ubuntu';
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 45px;
+                        transition: .4s;
+                        &:hover{
+                            color: black;
+                        }
+                       }
+                    }
+                }
+            }
+        }
+    }
+}
+/*===== header seaction end ====*/
+
+/*===== banner seaction start ====*/
+#banner{
+    background-color: $primary-color;
+    .total-banner{
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+        .left-area{
+            // width: 400px;
+            width: 40%;
+            h1{
+               font-family: 'Ubuntu';
+               font-weight: 500;
+               font-size: 50px;
+               line-height: 50px;
+               color: $secondary-color;
+               margin-bottom: 25px;
+               span{
+                color: $btn-color;
+               }
+            }
+            h3{
+                font-family: 'Ubuntu';
+                font-weight: 300; 
+                font-size: 25px;
+                line-height: 29px;
+                text-transform: uppercase;
+                color: $secondary-color;
+                margin-bottom: 20px;
+            }
+            p{
+                font-family: 'Roboto';
+                font-size: 16px;
+                font-weight: 300;
+                letter-spacing: 0px;
+                line-height: 24px;
+                text-align: justify;
+                color: $paragraph-color;
+            }
+        }
+        .right-area{
+            // width: scale(100%-510px);
+            width: 60%;
+            img{
+                //  margin-right: 70px;
+                 width: 432px;
+                 height: 310px;
+                 margin-left: 132px;
+                 background-color: $secondary-color;
+            }
+        }
+    }
+}
+/*===== banner seaction end ====*/
+
+/*===== achivement part start ====*/
+#achivement{
+    background-color: $primary-color;
+    padding: 100px 0;
+    h2{
+        font-size: 40px;
+        font-weight: 700;
+        font-family: 'Ubuntu';
+        text-align: center;
+        color: $secondary-color;
+    }
+    h5{
+        font-size: 16px;
+        color: $paragraph-color;
+        text-align: center;
+        position: relative;
+        margin-bottom: 40px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 42%;
+            height: 3px;
+            width: 45px;
+            background-color: #FF4500;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 54%;
+            height: 3px;
+            width: 45px;
+            background-color: #FF4500;
+        }
+    }
+    .div{
+        display: flex;
+        justify-content: space-between;
+    }
+    .achivement_item{
+        
+        border: 2px solid grey;
+        width: 174px;
+        height: 286px;
+        border-radius: 6px;
+        text-align: center;
+        box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.08);
+        .img{
+            // border-radius: 20px;
+        }
+        
+    }
+}
+/*===== achivement part end ====*/
